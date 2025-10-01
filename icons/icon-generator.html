@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vyoma Icon Generator</title>
+</head>
+<body>
+    <h1>Vyoma PWA Icon Generator</h1>
+    <p>This page generates placeholder icons for the PWA. Replace with actual icons for production.</p>
+    
+    <div id="icons"></div>
+    
+    <script>
+        // Icon sizes needed for PWA
+        const sizes = [32, 72, 96, 128, 144, 152, 192, 384, 512];
+        
+        // Create canvas for each size
+        sizes.forEach(size => {
+            const canvas = document.createElement('canvas');
+            canvas.width = size;
+            canvas.height = size;
+            const ctx = canvas.getContext('2d');
+            
+            // Create gradient background
+            const gradient = ctx.createLinearGradient(0, 0, size, size);
+            gradient.addColorStop(0, '#667eea');
+            gradient.addColorStop(1, '#764ba2');
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, size, size);
+            
+            // Add "V" letter
+            ctx.fillStyle = 'white';
+            ctx.font = `bold ${size * 0.5}px Arial`;
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText('V', size / 2, size / 2);
+            
+            // Create download link
+            canvas.toBlob(blob => {
+                const url = URL.createObjectURL(blob);
+                const link = document.createElement('a');
+                link.href = url;
+                link.download = `icon-${size}.png`;
+                link.textContent = `Download icon-${size}.png`;
+                link.style.display = 'block';
+                link.style.margin = '10px';
+                document.getElementById('icons').appendChild(link);
+            });
+        });
+        
+        // Note for users
+        const note = document.createElement('p');
+        note.innerHTML = `
+            <strong>Instructions:</strong><br>
+            1. Click each link to download the icon<br>
+            2. Save them in the icons/ folder<br>
+            3. For production, replace with professional icons<br>
+            <br>
+            <strong>Icon Design Tips:</strong><br>
+            - Use the Vyoma "V" logo or infinity symbol<br>
+            - Maintain gradient colors (#667eea to #764ba2)<br>
+            - Ensure good contrast for accessibility<br>
+            - Test on different backgrounds
+        `;
+        document.body.appendChild(note);
+    </script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+{
+  "app": {
+    "name": "Vyoma VR Therapy Platform",
+    "version": "1.0.0",
+    "author": "Vyoma Therapeutics",
+    "description": "Professional VR therapy platform for mental wellness"
+  },
+  "sessions": [
+    {
+      "id": "eKumVFvGHFA",
+      "title": "Cosmic Meditation Journey",
+      "description": "Experience the infinite cosmos for deep relaxation",
+      "duration": "10 min",
+      "category": "Meditation",
+      "benefits": ["Stress Relief", "Mind Expansion", "Deep Calm"],
+      "thumbnail": "https://img.youtube.com/vi/eKumVFvGHFA/maxresdefault.jpg",
+      "tags": ["space", "cosmos", "relaxation", "meditation"]
+    },
+    {
+      "id": "7AkbUfZjS5k",
+      "title": "Forest Bathing Therapy",
+      "description": "Connect with nature for anxiety relief and grounding",
+      "duration": "15 min",
+      "category": "Nature Therapy",
+      "benefits": ["Anxiety Relief", "Grounding", "Restoration"],
+      "thumbnail": "https://img.youtube.com/vi/7AkbUfZjS5k/maxresdefault.jpg",
+      "tags": ["forest", "nature", "grounding", "anxiety"]
+    },
+    {
+      "id": "jqq_ZdD5Zwg",
+      "title": "Ocean Wave Mindfulness",
+      "description": "Find peace with rhythmic ocean waves and breathwork",
+      "duration": "12 min",
+      "category": "Mindfulness",
+      "benefits": ["Mindfulness", "Breathwork", "Sleep Aid"],
+      "thumbnail": "https://img.youtube.com/vi/jqq_ZdD5Zwg/maxresdefault.jpg",
+      "tags": ["ocean", "waves", "mindfulness", "breathing"]
+    }
+  ],
+  "quality": {
+    "preferred": "highres",
+    "fallback": "hd1080",
+    "forceMaxQuality": true,
+    "checkInterval": 5000,
+    "autoAdjust": false,
+    "minimumQuality": "hd720"
+  },
+  "immersive": {
+    "autoHideControls": true,
+    "hideDelay": 5000,
+    "enableLoop": true,
+    "startMuted": false,
+    "defaultVolume": 0.8,
+    "enable360Drag": true,
+    "dragSensitivity": 0.5,
+    "showDragHint": true,
+    "dragHintDuration": 3000
+  },
+  "webxr": {
+    "enabled": true,
+    "requiredFeatures": ["local-floor"],
+    "optionalFeatures": ["bounded-floor", "hand-tracking"],
+    "referenceSpace": "local-floor",
+    "frameRate": 90,
+    "foveation": 1
+  },
+  "pwa": {
+    "enableServiceWorker": true,
+    "enableOfflineMode": true,
+    "cacheStrategy": "cache-first",
+    "showInstallPrompt": true,
+    "installPromptDelay": 30000,
+    "enableBackgroundSync": true,
+    "enablePushNotifications": false
+  },
+  "analytics": {
+    "enabled": false,
+    "trackSessions": false,
+    "trackErrors": true,
+    "anonymizeIP": true
+  },
+  "youtube": {
+    "playerVars": {
+      "autoplay": 1,
+      "controls": 0,
+      "disablekb": 1,
+      "fs": 0,
+      "modestbranding": 1,
+      "rel": 0,
+      "showinfo": 0,
+      "iv_load_policy": 3,
+      "cc_load_policy": 0,
+      "autohide": 1,
+      "playsinline": 1,
+      "enablejsapi": 1,
+      "loop": 1,
+      "mute": 0,
+      "vq": "highres",
+      "quality": "highres"
+    },
+    "hideAnnotations": true,
+    "hideCaptions": true,
+    "hideEndScreen": true,
+    "hideWatermark": true,
+    "disableKeyboard": true,
+    "disableContextMenu": true
+  },
+  "ui": {
+    "theme": "dark",
+    "primaryColor": "#667eea",
+    "secondaryColor": "#764ba2",
+    "accentColor": "#f093fb",
+    "animations": true,
+    "particleEffects": true,
+    "glowEffects": true,
+    "parallaxScrolling": true,
+    "smoothScrolling": true
+  },
+  "performance": {
+    "lazyLoadImages": true,
+    "preloadVideos": false,
+    "optimizeAnimations": true,
+    "throttleScrollEvents": true,
+    "debounceResizeEvents": true,
+    "requestIdleCallback": true
+  },
+  "accessibility": {
+    "highContrast": false,
+    "reducedMotion": false,
+    "screenReaderSupport": true,
+    "keyboardNavigation": true,
+    "focusIndicators": true,
+    "skipLinks": true
+  },
+  "browser": {
+    "minChromeVersion": 90,
+    "minFirefoxVersion": 88,
+    "minSafariVersion": 14,
+    "minEdgeVersion": 90,
+    "supportWebXR": true,
+    "supportWebGL2": true,
+    "supportServiceWorker": true
+  },
+  "api": {
+    "baseUrl": "",
+    "timeout": 10000,
+    "retryAttempts": 3,
+    "retryDelay": 1000
+  },
+  "debug": {
+    "enabled": false,
+    "showFPS": false,
+    "showQualityMonitor": false,
+    "logLevel": "error",
+    "preserveConsoleLog": false
+  }
+}

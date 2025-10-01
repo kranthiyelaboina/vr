@@ -1,0 +1,132 @@
+{
+  "name": "Vyoma VR Therapy Platform",
+  "short_name": "Vyoma",
+  "description": "Professional VR therapy platform for mental wellness through immersive 360° experiences",
+  "start_url": "/index.html",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "background_color": "#0f0f1e",
+  "theme_color": "#667eea",
+  "dir": "ltr",
+  "lang": "en-US",
+  "categories": ["health", "medical", "lifestyle"],
+  "iarc_rating_id": "e84b072d-71b3-4d3e-86ae-31a8ce4e53b7",
+  "icons": [
+    {
+      "src": "icons/icon-72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "assets/screenshot-1.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "label": "Vyoma home screen showing therapy sessions"
+    },
+    {
+      "src": "assets/screenshot-2.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "label": "Immersive VR therapy session in progress"
+    }
+  ],
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "shortcuts": [
+    {
+      "name": "Cosmic Meditation",
+      "short_name": "Cosmic",
+      "description": "Start cosmic meditation journey",
+      "url": "/index.html?session=cosmic",
+      "icons": [
+        {
+          "src": "icons/cosmic-96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Forest Therapy",
+      "short_name": "Forest",
+      "description": "Begin forest bathing therapy",
+      "url": "/index.html?session=forest",
+      "icons": [
+        {
+          "src": "icons/forest-96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Ocean Mindfulness",
+      "short_name": "Ocean",
+      "description": "Start ocean wave mindfulness",
+      "url": "/index.html?session=ocean",
+      "icons": [
+        {
+          "src": "icons/ocean-96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "features": [
+    "WebXR",
+    "360-degree-video",
+    "fullscreen",
+    "orientation-sensor",
+    "gyroscope"
+  ],
+  "permissions": [
+    "fullscreen",
+    "orientation"
+  ]
+}
